@@ -1,4 +1,4 @@
-from AoC2015Day1 import check_has_five_zeros, concatenate_input_and_number, generate_md5_hash
+from aoc_2015_day_4 import check_has_five_zeros, concatenate_input_and_number, generate_md5_hash, main
 
 
 def test_check_has_five_works():
@@ -23,3 +23,7 @@ def test_concatenate():
 
 def test_generate_md5_hash():
     assert generate_md5_hash("yzbqklnj") == "dd9391a66659d33f01cc20141ce540b8"
+
+
+def test_main_working():
+    assert main("abcdef") == 609043
